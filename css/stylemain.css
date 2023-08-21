@@ -12,7 +12,10 @@ html, body {
 .logo_f {
 	color: white;
 	font-size: 30px;
+}
 
+.topnav_menu {
+	display: flex;
 }
 
 .main_f {
@@ -55,6 +58,7 @@ html, body {
 }
 
 .profile {
+	min-width: 180px;
 	display: flex;
 	border: 3px solid white;
 	border-radius: 8px;
@@ -83,7 +87,7 @@ html, body {
 	vertical-align: middle;
 }
 
-.topnav_text {
+.topnav_menu p {
 	color: white;
 	font-family: century gothic, sans-serif;
 	font-weight: bold;
@@ -151,10 +155,21 @@ html, body {
 	border-radius: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* Стили для ноутбуков среднего размера */
+  .film img {
+		height: 300px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   /* Стили для планшетов */
   .swiper {
 		height: 300px; 
+	}
+
+	.film img {
+		height: 250px;
 	}
 
 	.swiper-slide img {
@@ -173,6 +188,39 @@ html, body {
 	.slide_1 h3 {
 		margin: 20px 0 0 0;
 		font-size: 30px;
+	}
+
+	.topnav_menu p {
+		font-size: 14px;
+		margin: 15px 5px;
+	}
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .film img {
+		height: 550px;
+	}
+	.swiper {
+		height: 250px; 
+	}
+
+	.swiper-slide img {
+		height: 250px; 
+	}
+
+	.slide_1 {
+		height: 250px;
+	}
+
+	.slide_1 h1 {
+		margin: 60px 10px 0px 10px;
+		font-size: 30px;
+	}
+
+	.slide_1 h3 {
+		margin: 20px 0 0 0;
+		font-size: 20px;
 	}
 }
 
@@ -198,5 +246,9 @@ html, body {
 	.slide_1 h3 {
 		margin: 20px 0 0 0;
 		font-size: 20px;
+	}
+
+	.topnav_menu p {
+		margin: 15px auto;
 	}
 }
